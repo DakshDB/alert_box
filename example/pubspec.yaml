@@ -30,7 +30,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  alert_box:
+  simple_alert_box:
     path: ../
 
   # The following adds the Cupertino Icons font to your application.

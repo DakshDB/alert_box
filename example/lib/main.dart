@@ -1,5 +1,5 @@
-import 'package:alert_box/alert_box.dart';
 import 'package:flutter/material.dart';
+import 'package:simple_alert_box/simple_alert_box.dart';
 
 void main() {
   runApp(const MyApp());

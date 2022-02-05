@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.daksh.alert_box.example">
+    package="com.daksh.simple_alert_box.example">
    <application
         android:label="example"
         android:name="${applicationName}"
