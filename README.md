@@ -4,6 +4,7 @@
 
 * Simple and easy to use
 * Dark mode available
+* Customizable Buttons
 
 
 ## Usage

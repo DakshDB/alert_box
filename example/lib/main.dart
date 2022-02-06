@@ -39,10 +39,27 @@ class _MyHomePageState extends State<MyHomePage> {
         child: TextButton(
           onPressed: () {
             AlertBox.showAlertBox(
-                context: context,
-                darkTheme: true,
-                alertText: 'Alert ! Alert ! Alert ! \nMy alert box !!',
-                buttonText: 'Example noted');
+              context: context,
+              darkTheme: true,
+              title: 'Alert ! Alert ! Alert !',
+              body: 'My alert box',
+              buttonText1: 'Noted 1',
+              buttonText2: 'Noted 2',
+              onPressedButton1: () {
+                Navigator.pop(context);
+                ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                  duration: Duration(milliseconds: 500),
+                  content: Text('Button 1 Pressed'),
+                ));
+              },
+              onPressedButton2: () {
+                Navigator.pop(context);
+                ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                  duration: Duration(milliseconds: 500),
+                  content: Text('Button 2 Pressed'),
+                ));
+              },
+            );
           },
           child: const Text(
             "Click for alert box",
